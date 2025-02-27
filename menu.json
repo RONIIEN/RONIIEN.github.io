@@ -1,0 +1,164 @@
+[
+    {
+      "name": "ผัดกะเพรา",
+      "image": "images/g1.png",
+      "link": "g1.html",
+      "calories": 413,
+      "protein": 45.6,
+      "carbs": 10.5,
+      "fat": 15.7
+    },
+    {
+      "name": "ผัดพริกแกง",
+      "image": "images/g2.png",
+      "link": "g2.html",
+      "calories": 453,
+      "protein": 71,
+      "carbs": 11.8,
+      "fat": 15.4
+    },
+    {
+      "name": "ผัดคะน้า",
+      "image": "images/g3.png",
+      "link": "g3.html",
+      "calories": 336,
+      "protein": 39,
+      "carbs": 24.2,
+      "fat": 10.4
+    },
+    {
+      "name": "ผัดแขนง",
+      "image": "images/g4.png",
+      "link": "g4.html",
+      "calories": 350,
+      "protein": 42,
+      "carbs": 20,
+      "fat": 12
+    },
+    {
+      "name": "ผัดผักรวม",
+      "image": "images/g5.png",
+      "link": "g5.html",
+      "calories": 300,
+      "protein": 35,
+      "carbs": 25,
+      "fat": 8
+    },
+    {
+      "name": "ผัดผงกะหรี่",
+      "image": "images/g6.png",
+      "link": "g6.html",
+      "calories": 480,
+      "protein": 50,
+      "carbs": 15,
+      "fat": 20
+    },
+    {
+      "name": "ผัดน้ำมันหอย",
+      "image": "images/g7.png",
+      "link": "g7.html",
+      "calories": 420,
+      "protein": 48,
+      "carbs": 12,
+      "fat": 18
+    },
+    {
+      "name": "ผัดพริกหยวก",
+      "image": "images/g8.png",
+      "link": "g8.html",
+      "calories": 380,
+      "protein": 40,
+      "carbs": 18,
+      "fat": 15
+    },
+    {
+      "name": "ปลาผัดขึ้นฉ่าย",
+      "image": "images/g9.png",
+      "link": "g9.html",
+      "calories": 460,
+      "protein": 55,
+      "carbs": 10,
+      "fat": 22
+    },
+    {
+      "name": "ต้มยำไข่น้ำ",
+      "image": "images/g111.png",
+      "link": "g11.html",
+      "calories": 350,
+      "protein": 25,
+      "carbs": 30,
+      "fat": 10
+    },
+    {
+      "name": "ต้มจับฉ่าย",
+      "image": "images/g22.png",
+      "link": "g22.html",
+      "calories": 280,
+      "protein": 15,
+      "carbs": 20,
+      "fat": 15
+    },
+    {
+      "name": "ต้มแซ่บ",
+      "image": "images/g33.png",
+      "link": "g33.html",
+      "calories": 320,
+      "protein": 20,
+      "carbs": 25,
+      "fat": 12
+    },
+    {
+      "name": "ต้มข่า",
+      "image": "images/g44.png",
+      "link": "g44.html",
+      "calories": 400,
+      "protein": 30,
+      "carbs": 15,
+      "fat": 20
+    },
+    {
+      "name": "แกงจืด",
+      "image": "images/g55.png",
+      "link": "g55.html",
+      "calories": 250,
+      "protein": 18,
+      "carbs": 22,
+      "fat": 8
+    },
+    {
+      "name": "แกงส้ม",
+      "image": "images/g66.png",
+      "link": "g66.html",
+      "calories": 380,
+      "protein": 28,
+      "carbs": 18,
+      "fat": 18
+    },
+    {
+      "name": "ต้มซั่ว",
+      "image": "images/g77.png",
+      "link": "g77.html",
+      "calories": 300,
+      "protein": 22,
+      "carbs": 20,
+      "fat": 10
+    },
+    {
+      "name": "ต้มยำ",
+      "image": "images/g88.png",
+      "link": "g88.html",
+      "calories": 330,
+      "protein": 23,
+      "carbs": 23,
+      "fat": 13
+    },
+    {
+      "name": "เกี๊ยวน้ำ",
+      "image": "images/g99.png",
+      "link": "g99.html",
+      "calories": 270,
+      "protein": 17,
+      "carbs": 24,
+      "fat": 9
+    }
+  ]

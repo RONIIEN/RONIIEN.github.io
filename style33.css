@@ -1,0 +1,182 @@
+body {
+    font-family: "Mitr", serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    background-image: url('images/food.png');
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative; /* ให้ container อยู่ในตำแหน่งปกติ */
+    z-index: 1; /* ทำให้เนื้อหาของ container อยู่เหนือภาพ */
+    background-color: #ffffff;
+}
+
+.site-name a {
+    text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
+    color: black; /* เปลี่ยนสีของลิงก์เป็นสีดำ */
+}
+
+.site-name a h1 {
+    margin: 0; /* เอาค่ามาร์จินของ h1 ออก */
+    color: black; /* เปลี่ยนสีของข้อความเป็นสีดำ */
+}
+
+.container {
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของ container */
+    margin: 0 auto; /* กำหนดให้ container อยู่กลางหน้าจอ */
+    padding: 0 20px; /* เพิ่มช่องว่างด้านซ้ายและขวาภายใน container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับ container */
+}
+
+
+/* ---- ปรับ HEADER ให้โลโก้ชิดซ้าย และ GOOD FOOD อยู่ตรงกลาง ---- */
+header {
+    position: sticky; /* ทำให้ header เลื่อนตามหน้า */
+    top: 0; /* ให้อยู่ที่ด้านบนสุดของหน้าจอ */
+    z-index: 1000; /* ให้ header อยู่เหนือเนื้อหาที่อื่น */
+    background-color: #fff; /* ตั้งพื้นหลังให้กับ header */
+}
+
+.logo-and-name {
+    display: flex; /* ให้โลโก้และชื่อเว็บอยู่ในแถวเดียวกัน */
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* ใช้ความกว้างเต็ม */
+}
+
+.logo {
+    flex-shrink: 0; /* ให้โลโก้ไม่หดตัว */
+}
+
+.site-name {
+    flex-grow: 1; /* ให้ "GOOD FOOD" ขยายเต็มพื้นที่ตรงกลาง */
+    display: flex;
+    justify-content: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+}
+
+.logo img {
+    height: 70px; /* ขนาดของโลโก้ */
+}
+
+.site-name h1 {
+    font-size: 3rem; /* ขนาดข้อความ "GOOD FOOD" */
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+nav {
+    width: 100%;
+    border-top: 3px solid #bad38e; /* เส้นด้านบนของเมนู */
+    padding-top: 25px;
+}
+
+nav {
+    width: 100%;
+    border-bottom: 2px solid #e0ecd5; /* เส้นด้านล่างของเมนู */
+    padding-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* สีข้อความของลิงก์ */
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px 20px; /* เพิ่มพื้นที่ภายในของลิงก์ */
+    display: inline-block; /* ให้ลิงก์มีลักษณะเหมือนปุ่ม */
+    border-radius: 10px; /* มุมมนของลิงก์ */
+    background-color: transparent; /* ทำให้พื้นหลังของลิงก์โปร่งใส */
+    outline: none; /* ลบเส้นขอบที่เกิดจากการ focus */
+    transition: background-color 0.3s, color 0.3s, outline-color 0.3s; /* เพิ่มแอนิเมชันในการเปลี่ยนพื้นหลังและสี */
+}
+
+nav ul li a:hover {
+    background-color: transparent; /* พื้นหลังโปร่งใสเมื่อชี้เมาส์ */
+    color: #333; /* เปลี่ยนสีข้อความเป็นสีเขียวเมื่อเอาเมาส์ไปชี้ */
+    outline: 2px solid #91bb47; /* ใช้ outline แทน border เพื่อแสดงขอบสีเขียว */
+}
+
+nav ul li a.active {
+    color: #333; /* หรือสีที่คุณต้องการ */
+    font-weight: bold;
+    background-color: transparent; /* พื้นหลังโปร่งใสเมื่อชี้เมาส์ */
+    outline: 2px solid #91bb47; 
+}
+/* ส่วนของเมนูอาหาร */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* เพิ่ม gap */
+    padding: 30px; /* เพิ่ม padding */
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* เพิ่ม margin-bottom */
+}
+
+.menu-item img {
+    width: 250px; /* เพิ่มขนาดรูปภาพ */
+    height: 200px; /* เพิ่มขนาดรูปภาพ */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px; /* เพิ่ม margin-bottom */
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 1.1rem; /* เพิ่มขนาดฟอนต์ */
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white; /* เพิ่มพื้นหลังสีขาว */
+    padding: 20px 0; /* เพิ่ม padding บนและล่าง */
+}
+
+.pagination a {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    color: #555;
+    transform: translateY(-2px);
+    text-decoration: underline;
+}

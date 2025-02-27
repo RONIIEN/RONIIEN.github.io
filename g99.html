@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <!-- Meta tags สำหรับการตั้งค่า charset และ viewport -->
+    <meta charset="UTF-8" /> <!-- กำหนด character encoding เป็น UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- กำหนด viewport สำหรับการแสดงผลบนมือถือ -->
+    <title>เกี๊ยวน้ำ</title> <!-- ชื่อหัวข้อของหน้าเว็บ -->
+    <!-- การเชื่อมโยงกับไฟล์ CSS -->
+    <link rel="stylesheet" href="styleg1.css" /> <!-- ลิงก์ไปยังไฟล์ CSS สำหรับการตกแต่ง -->
+    <!-- การเชื่อมโยงกับ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- เชื่อมต่อกับ Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- เชื่อมต่อเพื่อโหลดฟอนต์ -->
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- ใช้ฟอนต์ Mitr จาก Google Fonts -->
+</head>
+
+<body>
+    <!-- แบ่งส่วนของภาพซ้ายและขวา -->
+    <div class="left-image"></div> <!-- ภาพด้านซ้าย -->
+    <div class="right-image"></div> <!-- ภาพด้านขวา -->
+
+    <!-- ส่วนหลักของเนื้อหาภายใน -->
+    <div class="container">
+        <header>
+            <!-- โลโก้และชื่อเว็บไซต์ -->
+            <div class="logo-and-name">
+                <a href="1.html" class="logo">
+                    <img src="images/logo.png" alt="Logo" /> <!-- รูปโลโก้ -->
+                </a>
+                <div class="site-name">
+                    <a href="1.html">
+                        <h1>GOOD FOOD</h1> <!-- ชื่อเว็บไซต์ -->
+                    </a>
+                </div>
+            </div>
+            <!-- เมนูนำทาง -->
+            <nav>
+                <ul>
+                    <li><a href="2.html">ทำแบบทดสอบ</a></li> <!-- ลิงก์ไปยังหน้าแบบทดสอบ -->
+                    <li><a href="3.html">เมนูอาหาร</a></li> <!-- ลิงก์ไปยังหน้าเมนูอาหาร -->
+                    <li><a href="4.html">อาหารยอดฮิต</a></li> <!-- ลิงก์ไปยังหน้าอาหารยอดฮิต -->
+                    <li><a href="5.html">เกี่ยวกับเรา</a></li> <!-- ลิงก์ไปยังหน้าเกี่ยวกับเรา -->
+                    <li><a href="6.html">ติดต่อเรา</a></li> <!-- ลิงก์ไปยังหน้าติดต่อเรา -->
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="content">
+                <div class="image-container">
+                    <img src="images/g99.png" alt="เกี๊ยวน้ำ">
+                </div>
+                <div class="text-container">
+                    <div class="header">
+                        <h1>เกี๊ยวน้ำ</h1>
+                        <p>เกี๊ยวน้ำ เมนูอาหารที่ทำง่าย อร่อยได้ทั้งเด็กและผู้ใหญ่ มีหลากหลายไส้ให้เลือกสรร ขอนำเสนอวิธีทำเกี๊ยวน้ำหมูสับแสนอร่อย ซดน้ำซุปร้อน ๆ คล่องคอ</p>
+                    </div>
+                    <div class="benefits">
+                        <h2>ประโยชน์ของเกี๊ยวน้ำ</h2>
+                        <ul>
+                            <li>เกี๊ยวน้ำเป็นแหล่งโปรตีนที่ดี ช่วยเสริมสร้างและซ่อมแซมเนื้อเยื่อ</li>
+                            <li>ผักที่ใส่ในเกี๊ยวน้ำมีวิตามินและแร่ธาตุ ช่วยบำรุงร่างกาย</li>
+                            <li>น้ำซุปกระดูกหมูมีแคลเซียม ช่วยบำรุงกระดูกและฟัน</li>
+                            <li>เกี๊ยวน้ำเป็นอาหารที่ให้พลังงาน ช่วยให้ร่างกายมีแรงทำกิจกรรมต่าง ๆ</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ingredients">
+                <h2>ส่วนประกอบ</h2>
+                <ul>
+                    <li>แผ่นเกี๊ยว</li>
+                    <li>หมูสับ</li>
+                    <li>กุ้งสด (ปอกเปลือกผ่าหลัง)</li>
+                    <li>ผักกวางตุ้ง</li>
+                    <li>กระเทียมเจียว</li>
+                    <li>ต้นหอมซอย</li>
+                    <li>น้ำซุปกระดูกหมู</li>
+                    <li>เครื่องปรุงรส (ซีอิ๊วขาว, น้ำมันหอย, พริกไทย)</li>
+                </ul>
+            </div>
+            <div class="nutrition">
+                <h2>ประโยชน์ที่จะรับ</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ส่วนประกอบ</th>
+                            <th>พลังงาน (kcal)</th>
+                            <th>โปรตีน (g)</th>
+                            <th>ไขมัน (g)</th>
+                            <th>คาร์โบไฮเดรต (g)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>หมูสับ</td>
+                            <td>250</td>
+                            <td>26</td>
+                            <td>15</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>กุ้งสด</td>
+                            <td>100</td>
+                            <td>24</td>
+                            <td>0.3</td>
+                            <td>0.2</td>
+                        </tr>
+                        <tr>
+                            <td>แผ่นเกี๊ยว</td>
+                            <td>150</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>ผักกวางตุ้ง</td>
+                            <td>20</td>
+                            <td>2</td>
+                            <td>0.3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>น้ำซุปกระดูกหมู</td>
+                            <td>50</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>รวม</td>
+                            <td>570 kcal</td>
+                            <td>60 g</td>
+                            <td>19.6 g</td>
+                            <td>29.2 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="instructions">
+                <h2>วิธีการทำ</h2>
+                <ol>
+                    <li>ผสมหมูสับกับเครื่องปรุงรส นวดให้เข้ากัน</li>
+                    <li>ห่อหมูสับและกุ้งด้วยแผ่นเกี๊ยว</li>
+                    <li>ต้มน้ำซุปกระดูกหมูให้เดือด ใส่เกี๊ยวลงไปต้มให้สุก</li>
+                    <li>ใส่ผักกวางตุ้งลงไปลวกพอสุก</li>
+                    <li>ตักเกี๊ยวและผักใส่ชาม ราดด้วยน้ำซุป โรยกระเทียมเจียวและต้นหอมซอย</li>
+                    <li>ปรุงรสตามชอบ พร้อมเสิร์ฟ</li>
+                </ol>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,392 @@
+body {
+    font-family: "Mitr", serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-image: url('images/food.png');
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative; /* ให้ container อยู่ในตำแหน่งปกติ */
+    z-index: 1; /* ทำให้เนื้อหาของ container อยู่เหนือภาพ */
+    background-color: #ffffff;
+}
+
+
+
+.site-name a {
+    text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
+    color: black; /* เปลี่ยนสีของลิงก์เป็นสีดำ */
+}
+
+.site-name a h1 {
+    margin: 0; /* เอาค่ามาร์จินของ h1 ออก */
+    color: black; /* เปลี่ยนสีของข้อความเป็นสีดำ */
+}
+
+.container {
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของ container */
+    margin: 0 auto; /* กำหนดให้ container อยู่กลางหน้าจอ */
+    padding: 0 20px; /* เพิ่มช่องว่างด้านซ้ายและขวาภายใน container */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับ container */
+}
+
+
+/* ---- ปรับ HEADER ให้โลโก้ชิดซ้าย และ GOOD FOOD อยู่ตรงกลาง ---- */
+header {
+    position: sticky; /* ทำให้ header เลื่อนตามหน้า */
+    top: 0; /* ให้อยู่ที่ด้านบนสุดของหน้าจอ */
+    z-index: 1000; /* ให้ header อยู่เหนือเนื้อหาที่อื่น */
+    background-color: #fff; /* ตั้งพื้นหลังให้กับ header */
+}
+
+.logo-and-name {
+    display: flex; /* ให้โลโก้และชื่อเว็บอยู่ในแถวเดียวกัน */
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* ใช้ความกว้างเต็ม */
+}
+
+.logo {
+    flex-shrink: 0; /* ให้โลโก้ไม่หดตัว */
+}
+
+.site-name {
+    flex-grow: 1; /* ให้ "GOOD FOOD" ขยายเต็มพื้นที่ตรงกลาง */
+    display: flex;
+    justify-content: center; /* จัดให้ข้อความอยู่ตรงกลาง */
+}
+
+.logo img {
+    height: 70px; /* ขนาดของโลโก้ */
+}
+
+.site-name h1 {
+    font-size: 3rem; /* ขนาดข้อความ "GOOD FOOD" */
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+nav {
+    width: 100%;
+    border-top: 3px solid #bad38e; /* เส้นด้านบนของเมนู */
+    padding-top: 25px;
+}
+
+nav {
+    width: 100%;
+    border-bottom: 2px solid #e0ecd5; /* เส้นด้านล่างของเมนู */
+    padding-bottom: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* สีข้อความของลิงก์ */
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px 20px; /* เพิ่มพื้นที่ภายในของลิงก์ */
+    display: inline-block; /* ให้ลิงก์มีลักษณะเหมือนปุ่ม */
+    border-radius: 10px; /* มุมมนของลิงก์ */
+    background-color: transparent; /* ทำให้พื้นหลังของลิงก์โปร่งใส */
+    outline: none; /* ลบเส้นขอบที่เกิดจากการ focus */
+    transition: background-color 0.3s, color 0.3s, outline-color 0.3s; /* เพิ่มแอนิเมชันในการเปลี่ยนพื้นหลังและสี */
+}
+
+nav ul li a:hover {
+    background-color: transparent; /* พื้นหลังโปร่งใสเมื่อชี้เมาส์ */
+    color: #333; /* เปลี่ยนสีข้อความเป็นสีเขียวเมื่อเอาเมาส์ไปชี้ */
+    outline: 2px solid #91bb47; /* ใช้ outline แทน border เพื่อแสดงขอบสีเขียว */
+}
+
+
+/* ---- ปรับขนาดฟอนต์ให้ใหญ่ขึ้น ---- */
+h1 {
+    font-size: 4rem; /* ขยายหัวข้อหลัก */
+    font-weight: 600;
+    margin-bottom: 20px; /* เพิ่มระยะห่างระหว่าง h1 และ p */
+}
+
+p {
+    font-size: 2rem; /* ขยายข้อความ */
+    font-family: "Mitr", serif;
+    font-weight: 400; /* ปรับน้ำหนักฟอนต์ให้เป็นปกติ */
+    font-style: normal;
+}
+
+/* ปรับสไตล์ปุ่ม */
+button {
+    font-size: 1.8rem;
+    padding: 10px 30px;
+    background-color: #d2d9bf; /* พื้นหลังสีเดิม */
+    color: black;
+    border: 2px solid #d2d9bf; /* ขอบสีเดียวกับพื้นหลัง */
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Mitr", serif;
+    font-weight: normal;
+    font-style: normal;
+    transition: background-color 0.3s ease, font-weight 0.3s ease, transform 0.3s ease; /* การเปลี่ยนแปลงที่ต้องการ */
+}
+
+/* เมื่อเอาเมาส์ไปชี้ที่ปุ่ม */
+button:hover {
+    font-weight: bold; /* ทำให้ข้อความหนาขึ้น */
+    background-color: rgba(210, 217, 191, 0.7); /* ทำให้พื้นหลังจางลง */
+    border-color: #d2d9bf; /* ขอบยังคงเป็นสีเดิม */
+    transform: translateY(-5px); /* ให้ปุ่มยกขึ้นเล็กน้อย */
+}
+
+
+/* ---- HERO SECTION ---- */
+.hero {
+    position: relative; /* ทำให้สามารถใช้ตำแหน่ง absolute ใน .image-content ได้ */
+    display: flex; /* ใช้ Flexbox layout เพื่อจัดเรียงเนื้อหาภายใน hero */
+    justify-content: flex-start; /* จัดเรียงเนื้อหาจากซ้ายไปขวา (แกนหลัก) */
+    align-items: center; /* จัดให้เนื้อหากลางในแนวตั้ง */
+    padding: 50px 20px; /* กำหนดช่องว่างด้านใน (50px ด้านบน/ล่าง, 20px ซ้าย/ขวา) */
+    border-radius: 15px; /* ทำมุมของ hero ให้มน */
+    margin: 20px auto; /* กำหนดช่องว่างด้านนอก (20px ด้านบน/ล่าง) และให้อยู่กลางหน้า */
+}
+
+.text-content {
+    max-width: 50%; /* กำหนดความกว้างสูงสุดของข้อความเป็น 50% ของพื้นที่ */
+    position: relative; /* ทำให้ข้อความอยู่หน้าภาพที่ใช้ position absolute */
+    z-index: 2; /* ตั้งค่า z-index เพื่อให้ข้อความอยู่เหนือภาพ */
+    background-color: #ffffff; /* พื้นหลังสีขาวสำหรับข้อความ */
+    padding: 20px; /* เพิ่มช่องว่างภายในข้อความ */
+    border-radius: 10px; /* ทำมุมของข้อความให้มน */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* เพิ่มเงาให้ข้อความ */
+}
+
+.text-content h1 {
+    font-size: 3.5rem; /* ขนาดฟอนต์ของหัวข้อ */
+    font-weight: bold; /* ทำให้ฟอนต์หัวข้อหนา */
+    margin-bottom: 20px; /* เพิ่มช่องว่างด้านล่างของหัวข้อ */
+}
+
+.text-content p {
+    font-size: 1.8rem; /* ขนาดฟอนต์ของข้อความ */
+    margin-bottom: 30px; /* เพิ่มช่องว่างด้านล่างของข้อความ */
+}
+
+.text-content button {
+    font-size: 1.8rem; /* ขนาดฟอนต์ของปุ่ม */
+    padding: 12px 30px; /* ช่องว่างภายในปุ่ม */
+    background-color: #d2d9bf; /* พื้นหลังสีของปุ่ม */
+    color: black; /* สีตัวอักษรของปุ่ม */
+    border: none; /* ไม่มีขอบปุ่ม */
+    cursor: pointer; /* แสดงรูปมือเมื่อชี้ที่ปุ่ม */
+    border-radius: 10px; /* ทำมุมของปุ่มให้มน */
+    font-family: "Mitr", serif; /* กำหนดฟอนต์ของปุ่ม */
+    font-weight: normal; /* ตั้งค่าฟอนต์ของปุ่มเป็นปกติ */
+}
+
+.image-content {
+    position: absolute; /* ทำให้ภาพอยู่ด้านหลังของข้อความ */
+    top: 0; /* เริ่มต้นที่ด้านบน */
+    right: 0; /* เริ่มต้นที่ด้านขวา */
+    width: 50%; /* ความกว้างของภาพเป็น 50% ของพื้นที่ */
+    height: 100%; /* ความสูงของภาพเต็มพื้นที่ */
+    overflow: hidden; /* ซ่อนส่วนที่เกินของภาพ */
+}
+
+.image-content img {
+    width: 100%; /* ทำให้ภาพกว้างเต็มพื้นที่ */
+    height: 100%; /* ทำให้ภาพสูงเต็มพื้นที่ */
+    object-fit: cover; /* ปรับขนาดภาพให้ไม่เสียสัดส่วน */
+}
+
+/* ---- เพิ่มการตกแต่งข้อความลิงก์ ---- */
+.block p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none; /* ไม่มีเส้นขีดใต้เมื่อไม่ชี้เมาส์ */
+    transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงที่ค่อยๆ เกิดขึ้น */
+}
+
+.block p:hover {
+    text-decoration: underline; /* ให้มีเส้นขีดใต้เมื่อเมาส์ชี้ */
+    font-weight: 600; /* ทำให้ตัวหนังสือหนาขึ้นเมื่อชี้เมาส์ */
+}
+
+  
+
+/* ---- ปรับกล่องข้อมูลให้ใหญ่ขึ้น ---- */
+.info {
+    text-align: left;
+    padding: 15px 0;
+    display: flex; /* ใช้ flexbox ใน .info */
+    justify-content: center; /* จัดกล่องให้ตรงกลางในแนวนอน */
+    align-items: center; /* จัดกล่องให้ตรงกลางในแนวตั้ง */
+    height: 100%; /* หรือกำหนดความสูงที่ต้องการ */
+}
+
+.info .box {
+    border: 5px solid #91bb47; /* กำหนดขอบกล่องด้วยเส้นสีเขียว */
+    padding: 15px; /* เพิ่มช่องว่างภายในกล่องให้ห่างจากขอบกล่อง */
+    width: 90%; /* กำหนดความกว้างของกล่องเป็น 80% ของพื้นที่พ่อแม่ */
+    font-size: 2rem; /* กำหนดขนาดฟอนต์ภายในกล่อง */
+    border-radius: 15px; /* ทำมุมของกล่องมน */
+    margin-bottom: 40px; /* ปรับระยะห่างตามที่ต้องการ */
+    font-weight: 400; /* ทำให้หัวข้อหนาขึ้น */
+}
+
+
+
+/* ส่วนหัวข้อใหม่ที่มีขีดเส้นด้านล่าง */
+.additional-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ทำให้หัวข้ออยู่ชิดซ้าย */
+    margin-bottom: 40px;
+}
+
+.additional-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left; /* ให้หัวข้ออยู่ชิดซ้าย */
+    width: 100%; /* ให้หัวข้อเต็มพื้นที่ */
+}
+
+.underline {
+    width: 100%; /* ยืดเส้นขีดล่างให้เต็มความกว้าง */
+    height: 3px; /* กำหนดความสูงของเส้น */
+    background-color: #91bb47; /* สีเขียวเหมือนกับเส้นในส่วนหัว */
+    margin-left: 0; /* ให้เส้นเริ่มจากซ้ายสุด */
+}
+
+
+/* จัดภาพและข้อความให้อยู่ในบล็อกเดียวกัน */
+.content-blocks {
+    display: flex;
+    justify-content: space-between; /* ให้บล็อก 3 อันอยู่ห่างกัน */
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.block {
+    width: 30%; /* ให้บล็อกมีความกว้าง 30% */
+    text-align: center; /* ให้ข้อความอยู่ตรงกลาง */
+}
+
+.block img {
+    width: 100%; /* ให้ภาพขยายเต็มความกว้างของบล็อก */
+    height: 200px; /* กำหนดความสูงของภาพให้เท่ากัน */
+    object-fit: cover; /* ปรับขนาดของภาพให้ไม่เสียสัดส่วน */
+    border-radius: 10px;
+    margin-bottom: 15px; /* ระยะห่างระหว่างภาพและข้อความ */
+}
+
+.block p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.block p:hover {
+    text-decoration: underline;
+}
+
+/* ---- เพิ่มการตกแต่งข้อความลิงก์ ---- */
+.block p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #333;
+    text-decoration: none; /* ไม่มีเส้นขีดใต้เมื่อไม่ชี้เมาส์ */
+    transition: all 0.1s ease; /* เพิ่มการเปลี่ยนแปลงที่ค่อยๆ เกิดขึ้น */
+}
+
+/* เมื่อชี้เมาส์ที่ข้อความ */
+.block p:hover {
+    text-decoration: underline; /* ให้มีเส้นขีดใต้เมื่อเมาส์ชี้ */
+    font-weight: 600; /* ทำให้ตัวหนังสือหนาขึ้นเมื่อชี้เมาส์ */
+}
+
+/* ปรับสไตล์สำหรับลิงก์ภายใน .block p */
+.block a {
+    text-decoration: none; /* ไม่มีเส้นขีดใต้ของลิงก์ */
+}
+
+.footer-container {
+    display: flex; /* กำหนดให้คอนเทนเนอร์ของส่วนท้ายใช้ Flexbox layout */
+    justify-content: space-around; /* จัดเรียงเนื้อหาภายในคอนเทนเนอร์ให้มีระยะห่างเท่ากัน */
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของคอนเทนเนอร์เป็น 1200px */
+    margin: 0 auto; /* กำหนดให้คอนเทนเนอร์อยู่ตรงกลางหน้าจอ */
+    padding: 0 50px; /* กำหนดระยะห่างภายในด้านซ้ายและด้านขวาเป็น 20px */
+    background-color: #bad38e; /* กำหนดสีพื้นหลังของคอนเทนเนอร์เป็นสีเขียวอ่อน (ซ้ำกับ .footer แต่ไม่จำเป็น) */
+    font-size: 1em; /* กำหนดขนาดตัวอักษรเป็น 1 เท่าของขนาดตัวอักษรปกติ */
+    border-radius: 10px;
+}
+
+.footer-container {
+    display: flex; /* กำหนดให้คอนเทนเนอร์ของส่วนท้ายใช้ Flexbox layout */
+    justify-content: space-around; /* จัดเรียงเนื้อหาภายในคอนเทนเนอร์ให้มีระยะห่างเท่ากัน */
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของคอนเทนเนอร์เป็น 1200px */
+    margin: 0 auto; /* กำหนดให้คอนเทนเนอร์อยู่ตรงกลางหน้าจอ */
+    padding: 0 50px; /* กำหนดระยะห่างภายในด้านซ้ายและด้านขวาเป็น 20px */
+    background-color: #bad38e; /* กำหนดสีพื้นหลังของคอนเทนเนอร์เป็นสีเขียวอ่อน (ซ้ำกับ .footer แต่ไม่จำเป็น) */
+    font-size: 1em; /* กำหนดขนาดตัวอักษรเป็น 1 เท่าของขนาดตัวอักษรปกติ */
+    border-radius: 10px;
+}
+
+.footer-section {
+    flex: 1; /* กำหนดให้แต่ละส่วนภายในคอนเทนเนอร์มีขนาดเท่ากัน */
+    padding: 0 20px; /* กำหนดระยะห่างภายในด้านซ้ายและด้านขวาเป็น 20px */
+}
+
+.footer-section h3 {
+    font-size: 1.2em; /* กำหนดขนาดตัวอักษรของหัวข้อเป็น 1.2 เท่าของขนาดตัวอักษรปกติ */
+    margin-bottom: 10px; /* กำหนดระยะห่างด้านล่างของหัวข้อเป็น 10px */
+}
+
+.footer-section ul {
+    list-style: none; /* ลบสัญลักษณ์รายการออกจากรายการ */
+    padding: 0; /* ลบระยะห่างภายในของรายการ */
+}
+
+.footer-section li {
+    margin-bottom: 8px; /* กำหนดระยะห่างด้านล่างของแต่ละรายการเป็น 5px */
+}
+
+.footer-section a {
+    color: #333; /* กำหนดสีตัวอักษรของลิงก์เป็นสีเทาเข้ม */
+    text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
+}
+
+.footer-copyright {
+    text-align: center; /* จัดเรียงข้อความลิขสิทธิ์ให้อยู่ตรงกลาง */
+    margin-top: 20px; /* กำหนดระยะห่างด้านบนของข้อความลิขสิทธิ์เป็น 20px */
+    padding-top: 10px; /* กำหนดระยะห่างภายในด้านบนของข้อความลิขสิทธิ์เป็น 10px */
+    border-top: 1px solid #c2e29e; /* กำหนดเส้นขอบด้านบนของข้อความลิขสิทธิ์เป็นเส้นสีเขียวอ่อน */
+}
+.footer-section a {
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* เพิ่ม transition */
+}
+
+.footer-section a:hover {
+    color: #333; /* เปลี่ยนสีตัวอักษรเป็นสีขาวเมื่อ hover */
+    padding: 5px; /* เพิ่ม padding เมื่อ hover */
+    border-radius: 5px; /* เพิ่ม border radius เมื่อ hover */
+}
